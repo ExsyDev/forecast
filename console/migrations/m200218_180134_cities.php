@@ -15,14 +15,6 @@ class m200218_180134_cities extends Migration
             'country_id' => Schema::TYPE_BIGINT,
             'city' => Schema::TYPE_STRING . ' NOT NULL',
         ]);
-
-        $this->addForeignKey(
-            'f-foreign-country',
-            'cities',
-            'country_id',
-            'countries',
-            'id',
-            'CASCADE');
     }
 
     public function down()

@@ -1,4 +1,7 @@
 <?php
+
+Yii::setAlias('@resourceCountryCity', realpath(dirname(__FILE__).'/../../resource/country_city'));
+
 return [
     'adminEmail' => 'admin@example.com',
     'supportEmail' => 'support@example.com',

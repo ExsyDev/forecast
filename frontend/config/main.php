@@ -41,6 +41,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'forecast/site/history/<city:.*>' => 'forecast/site/history'
             ],
         ],
     ],

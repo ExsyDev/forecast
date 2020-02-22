@@ -17,13 +17,13 @@ class m200218_181136_forecast extends Migration
             'created_at' => Schema::TYPE_DATETIME
         ]);
 
-        $this->addForeignKey(
-            'f-foreign-city',
-            'forecast',
-            'city_id',
-            'cities',
-            'id',
-            'CASCADE');
+//        $this->addForeignKey(
+//            'f-foreign-city',
+//            'forecast',
+//            'city_id',
+//            'cities',
+//            'id',
+//            'CASCADE');
     }
 
     public function down()

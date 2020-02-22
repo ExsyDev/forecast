@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "040a0b37fe442436082e83ad59a21f22",
+    "content-hash": "d1f86f9a675cda6d735892de36a246fb",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -21,6 +21,49 @@
             },
             "require": {
                 "bower-asset/jquery": ">=1.9.1,<4.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/datatables",
+            "version": "1.10.19",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:DataTables/DataTables.git",
+                "reference": "156faa83386460c578e00c460eca9766e38a0c5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataTables/DataTables/zipball/156faa83386460c578e00c460eca9766e38a0c5f",
+                "reference": "156faa83386460c578e00c460eca9766e38a0c5f"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/datatables-plugins",
+            "version": "1.10.20",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:DataTables/Plugins.git",
+                "reference": "dfb39590b33a454f9561b54e51709db0350b8f2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataTables/Plugins/zipball/dfb39590b33a454f9561b54e51709db0350b8f2a",
+                "reference": "dfb39590b33a454f9561b54e51709db0350b8f2a"
+            },
+            "require": {
+                "bower-asset/datatables": ">=1.10.15",
+                "bower-asset/jquery": ">=1.7.0"
             },
             "type": "bower-asset",
             "license": [
@@ -53,7 +96,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -330,6 +373,56 @@
             "time": "2019-10-28T03:44:26+00:00"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "v1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^2.9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2019-12-12T13:22:17+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.2",
             "source": {
@@ -517,6 +610,59 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "nullref/yii2-datatables",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NullRefExcep/yii2-datatables.git",
+                "reference": "17b21f31328556203ee3dfd91f90328fcbc721f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NullRefExcep/yii2-datatables/zipball/17b21f31328556203ee3dfd91f90328fcbc721f4",
+                "reference": "17b21f31328556203ee3dfd91f90328fcbc721f4",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/datatables": "~1.10.15",
+                "bower-asset/datatables-plugins": "~1.10.15",
+                "php": ">=5.5.0",
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "nullref\\datatable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serhiy Vinichuk",
+                    "email": "serhiyvinichuk@gmail.com"
+                },
+                {
+                    "name": "Dmytro Karpovych",
+                    "email": "ZAYEC77@gmail.com"
+                }
+            ],
+            "description": "Yii2 Extension for DataTables jQuery plug-in",
+            "homepage": "https://github.com/NullRefExcep/yii2-datatables",
+            "keywords": [
+                "datatable",
+                "datatables",
+                "jquery",
+                "plugin",
+                "widget",
+                "yii",
+                "yii2"
+            ],
+            "time": "2019-05-18T15:54:28+00:00"
         },
         {
             "name": "psr/http-message",
@@ -904,6 +1050,81 @@
                 "shim"
             ],
             "time": "2020-01-13T11:15:53+00:00"
+        },
+        {
+            "name": "tebazil/db-seeder",
+            "version": "0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tebazil/db-seeder.git",
+                "reference": "5bbcea95df02c4a72d432dfc7c05cf84a95db48d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tebazil/db-seeder/zipball/5bbcea95df02c4a72d432dfc7c05cf84a95db48d",
+                "reference": "5bbcea95df02c4a72d432dfc7c05cf84a95db48d",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "^1.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tebazil\\dbseeder\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vasiliy Baukin",
+                    "email": "vasiliy.baukin@gmail.com"
+                }
+            ],
+            "description": "Simple to use PHP db seeding tool that uses faker generators",
+            "time": "2015-10-11T21:40:43+00:00"
+        },
+        {
+            "name": "tebazil/yii2-db-seeder",
+            "version": "0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tebazil/yii2-db-seeder.git",
+                "reference": "0f89bfc8d7ee22e9ea63ea46b73b2a59f886c8f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tebazil/yii2-db-seeder/zipball/0f89bfc8d7ee22e9ea63ea46b73b2a59f886c8f5",
+                "reference": "0f89bfc8d7ee22e9ea63ea46b73b2a59f886c8f5",
+                "shasum": ""
+            },
+            "require": {
+                "tebazil/db-seeder": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "tebazil\\yii2seeder\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vasiliy Baukin",
+                    "email": "vasiliy.baukin@gmail.com"
+                }
+            ],
+            "description": "Yii2 adapter for PHP Database Seeder library",
+            "time": "2015-10-11T21:52:23+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -1741,56 +1962,6 @@
                 "instantiate"
             ],
             "time": "2019-10-21T16:45:58+00:00"
-        },
-        {
-            "name": "fzaninotto/faker",
-            "version": "v1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
-                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.3 || ^7.0"
-            },
-            "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^2.9.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "time": "2019-12-12T13:22:17+00:00"
         },
         {
             "name": "myclabs/deep-copy",
